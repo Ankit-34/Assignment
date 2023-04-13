@@ -9,7 +9,7 @@ import OurStory from './components/Our_Story/OurStory.jsx';
 import Schedule from './components/Schedule/Schedule.jsx';
 import card from './data/card.js';
 import Form from './components/Form.jsx';
-import './app.css';
+// import './app.css';
 
 export default function MyApp() {
   const [screenSize, getDimension] = useState({
