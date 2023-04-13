@@ -1,0 +1,132 @@
+.overImg{
+    /* color: ; */
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-shadow: 2px 2px 2px rgb(0, 191, 255);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-60px, -150px);
+    opacity: 1;
+    animation: fromTop;
+    animation-duration: 3s;
+}
+
+@keyframes fromTop {
+    0%   {
+            opacity: 0;
+            transform: translateY(-150px);
+        }
+  }
+
+.slide{
+    width: 100%;
+    height: fit-content;
+    /* height: 60% !important; */
+    position: absolute;
+    opacity: 0;
+    z-index: -111;
+    transition: opacity ease-in-out .1ms !important;
+    /* background-position: fixed; */
+    object-fit: cover;
+}
+
+.active-anim {
+    opacity: 1;
+    position: static;
+}
+/* 
+.active-anim img{
+    height: 20%;
+    object-fit: cover !important;
+} */
+
+.back_img{
+    width: 100%;
+    height: 80vh;
+    /* object-fit: cover !important; */
+}
+
+.btn-slide{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(241, 241, 241, 0);
+  border: 0px solid rgba(34, 34, 34, 0.287);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.next{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-140%);
+}
+
+.prev{
+     top: 50%;
+     left: 20px;
+     transform: translateY(-140%);
+}
+@media (max-width: 880px){
+    .back_img{
+        height: 70vh;
+    }
+    .next, .prev{
+        top: 45%;
+    }
+    .overImg{
+        display: none;
+    }
+    .btn-slide img{
+        width: 80%;
+        height: 80%;
+    }
+}
+@media (max-width: 680px){
+    .back_img{
+        height: 60vh;
+    }
+    .next, .prev{
+        top: 40%;
+    }
+    .btn-slide img{
+        width: 70%;
+        height: 70%;
+    }
+}
+@media (max-width: 480px){
+    .back_img{
+        height: 50vh;
+    }
+    .next, .prev{
+        top: 30%;
+    }
+    .btn-slide img{
+        width: 60%;
+        height: 60%;
+    }
+}
+@media (max-width: 380px){
+    .back_img{
+        height: 45vh;
+    }
+    .next, .prev{
+        top: 25%;
+    }
+    .btn-slide img{
+        width: 50%;
+        height: 50%;
+    }
+}
+@media (max-width: 250px){
+    .back_img{
+        height: 35vh;
+    }
+    .next, .prev{
+        top: 20%;
+    }
+}
