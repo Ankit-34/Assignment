@@ -101,13 +101,13 @@
     }
 }
 
-@media (max-width: 390px){
+@media (max-width: 400px){
     /* .right_side div{
         transform: translateY(-12%);
         height: 80px;
     } */
     .right_side div{
-        height: 5rem;
+        height: 6rem;
     }
     /* .right_side h2{
         height: 80px;
