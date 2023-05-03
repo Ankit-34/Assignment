@@ -32,38 +32,38 @@ const Form = () => {
     <div className='Outer'>
     <form onSubmit={handleSubmit} className='form'>
         <div>
-            <label>PickUp Location : </label>
+            <label>PickUp Location: </label>
             <input type='text' name='pickLoc' onChange={handleChange}></input>
         </div>
         <div>
-            <label>Drop Location : </label>
+            <label>Drop Location: </label>
             <input type='text' name='dropLoc' onChange={handleChange}></input>
         </div>
         <div>
-            <label>Date : </label>
+            <label>Date: </label>
             <input type='date' name='Date' onChange={handleChange}></input>
         </div>
         <div>
-            <label>Time : </label>
+            <label>Time: </label>
             <input type='time' name='Time' onChange={handleChange}></input>
         </div>
-        <button type='submit'>Submit</button>
+        <button class="submit" type='submit'>Submit</button>
     </form>
     <div className='form_viewer'>
       <div className='pic'>
-        <label for="picLoc">PickUp Location : </label>
+        <label for="picLoc">PickUp Location: </label>
         <p name="picLoc" className='picVal'>{data.pickLoc}</p>
       </div>
       <div className='drop'>
-        <label for="dropLoc">Drop Location : </label>
+        <label for="dropLoc">Drop Location: </label>
         <p name="dropLoc" className='dropVal'>{data.dropLoc}</p>
       </div>
       <div className='date'>
-        <label for="date">Date Location : </label>
+        <label for="date">Date Location: </label>
         <p name="date" className='dateVal'>{data.Date}</p>
       </div>
       <div className='time'>
-        <label for="time">Time Location : </label>
+        <label for="time">Time Location: </label>
         <p name="time" className='timeVal'>{data.Time}</p>
       </div>
     </div>

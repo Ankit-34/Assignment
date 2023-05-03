@@ -17,8 +17,8 @@
     display: flex;
 }
 
-.form{
-    width: 40%;
+.form, .form_viewer{
+    width: 400px;
     font-size: 1.2rem;
     height: 60%;
     margin: 20px auto;
@@ -29,51 +29,46 @@
     border-radius: 2px;
     box-shadow: 2px 2px 2px rgb(18, 246, 242);
     /* align-items: center; */
+    /* margin: 0 auto; */
 }
 
-.form div{
+.form div, .form_viewer div{
     display: flex;
-    margin: 20px 0;
+    margin: 20px auto;
     width: 80%;
 }
 
-.form div label{
+.form div label, .form_viewer div label{
     width: 70%;
-    height: 20px;
+    height: 70%;
 }
 
 .form div input{
     /* transform: translateX(10%); */
     border: 2px solid grey;
     width: 50%;
-    height: 40%;
+    /* height: fit-content; */
     line-height: 10px;
     letter-spacing: 1px;
 }
 
-.form_viewer{
-    width: 40%;
-    font-size: 1.2rem;
-    height: 60%;
-    margin: 20px auto;
-    display: block;
-    /* display: inline-block; */
-    flex-direction: column;
-    background: rgba(155, 247, 242,0.5);
-    padding: 20px;
+.submit{
+    /* margin: 0 auto; */
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(93, 239, 253);
+    font-weight: 600;
+    /* color: white; */
+    letter-spacing: 1px;
+    cursor: pointer;
     border-radius: 2px;
-    box-shadow: 2px 2px 2px rgb(18, 246, 242);
+    box-shadow: 2px 2px 2px rgb(6, 132, 128);
+    transform: translateX(75%);
+    width: 40%;
 }
-
-.form_viewer div{
-    margin: 20px 0;
-    display: flex;
-}
-
 .form_viewer div label {
-    font-size: 1.2rem;
-    margin: 0 10px;
-    width: 70%;
+    height: 70%;
+    width: 60%;
 }
 
 @media (max-width: 985px){
@@ -83,12 +78,31 @@
         grid-template-columns: auto;
     }
     .form{
-        height: 80%;
+        height: 85%;
     }
     .form_viewer{
-        height: 80%;
+        height: 85%;
     }
 }
 
+@media (max-width: 435px){
+    .Outer{
+        font-size: 15px;
+    }
+    .form, .form_viewer{
+        width: 80%;
+    }
+}
 
+@media (max-width: 390px){
+    .Outer{
+        font-size: 9px;
+    }
+    .form, .form_viewer{
+        padding: 5px;
+        font-size: 14px;
+        height: 95%;
+        width: 100%;
+    }
+}
 
