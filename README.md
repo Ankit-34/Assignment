@@ -1,3 +1,1 @@
-- Extract the folder
-- run : npm i
-- run : npm start
+It is a basic responsive frontend demo for taxi booking website using ReactJs.
